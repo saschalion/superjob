@@ -1,0 +1,253 @@
+.b-form
+  position relative
+
+.b-form__row
+  margin 24px 0 0
+  &:first-child
+    margin 0
+
+.b-form__fields
+  position relative
+
+  &._type_inline
+    float left
+    width 49.2%
+    width calc(50% - 5px)
+    margin 0 0 0 9px
+
+    &:first-child
+      margin 0
+
+  &._state_valid
+    &:before
+      position absolute
+      top 3px
+      right 0
+      content '✔'
+      color #50c566
+      font-size 15px
+
+  &._state_error
+    .b-form__field
+      border-color #d53633
+      background #fff6f5
+
+    .b-form__help-text
+      display none
+    &._state_valid
+      .b-form__help-text
+        display block
+
+.b-form__label-text
+  display block
+  margin 0 0 5px
+  font-style normal
+  font-size 14px
+  font-weight 600
+  &._gaps_big
+    margin-bottom 23px
+
+.b-form__field-inner
+  position relative
+  display block
+
+.b-form__field
+  width 100%
+  height 42px
+  padding 5px 10px
+  transition .3s all
+  box-sizing border-box
+  border-radius 4px
+  outline none
+  border 1px solid #d8d8d8
+  background #fbfbfb
+  font-family 'Roboto', Arial, helvetica, sans-serif
+  font-size 15px
+
+  &._type_phone
+    padding-left 45px
+
+  &._type_city
+    padding-left 30px
+    padding-right 40px
+
+  &._type_company
+    padding-left 76px
+
+  &:focus
+    border-color #82b6f0
+    box-shadow 0 1px 2px #D6E4F2
+
+.b-form__textarea
+  height 82px
+
+.b-form__flag
+  position absolute
+  top 50%
+  left 13px
+  width 24px
+  height 16px
+  margin -10px 0 0
+  background url('/blocks/img/flag.png')
+
+.b-form__help-text
+  margin 4px 0 0
+  display block
+  font-style normal
+  font-size 12px
+  color #757374
+
+.b-form__btn
+  position relative
+  padding 0 45px
+  height 44px
+  font-size 18px
+  line-height 42px
+  color #fff
+  outline none
+  border-radius 3px
+  text-align center
+  text-decoration none
+  border 1px solid #0F70DE
+  background #398eed
+  background -moz-linear-gradient(top,  #398eed 0%, #187cec 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#398eed), color-stop(100%,#187cec))
+  background -webkit-linear-gradient(top,  #398eed 0%,#187cec 100%)
+  background -o-linear-gradient(top,  #398eed 0%,#187cec 100%)
+  background -ms-linear-gradient(top,  #398eed 0%,#187cec 100%)
+  background linear-gradient(to bottom,  #398eed 0%,#187cec 100%)
+  cursor pointer
+
+  &:hover
+    background-image -o-linear-gradient(-89deg, #398EED 0%, #0361CA 100%)
+    background-image -moz-linear-gradient(-89deg, #398EED 0%, #0361CA 100%)
+    background-image -ms-linear-gradient(-89deg, #398EED 0%, #0361CA 100%)
+    background-image linear-gradient(-179deg, #398EED 0%, #0361CA 100%)
+    border-color #0F70DE
+
+  &:active
+    top 1px
+    background-image -o-linear-gradient(-89deg, #398EED 0%, #187CEC 100%)
+    background-image -moz-linear-gradient(-89deg, #398EED 0%, #187CEC 100%)
+    background-image -ms-linear-gradient(-89deg, #398EED 0%, #187CEC 100%)
+    background-image linear-gradient(-179deg, #398EED 0%, #187CEC 100%)
+    border 1px solid #0F70DE
+
+  &._align_right
+    float right
+
+  &._state_disabled
+    color #fbf9fa
+    border-color #7aaeea
+    background #90bef2
+    background -moz-linear-gradient(top,  #90bef2 0%, #7eb6f1 100%)
+    background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#90bef2), color-stop(100%,#7eb6f1))
+    background -webkit-linear-gradient(top,  #90bef2 0%,#7eb6f1 100%)
+    background -o-linear-gradient(top,  #90bef2 0%,#7eb6f1 100%)
+    background -ms-linear-gradient(top,  #90bef2 0%,#7eb6f1 100%)
+    background linear-gradient(to bottom,  #90bef2 0%,#7eb6f1 100%)
+
+  &._style_gray
+    background #F4F4F4
+    background-image -o-linear-gradient(-89deg, #F4F4F4 0%, #E9E9E9 100%)
+    background-image -moz-linear-gradient(-89deg, #F4F4F4 0%, #E9E9E9 100%)
+    background-image -ms-linear-gradient(-89deg, #F4F4F4 0%, #E9E9E9 100%)
+    background-image linear-gradient(-179deg, #F4F4F4 0%, #E9E9E9 100%)
+    color #000
+    border-color #d7d7d7
+    &:hover
+      background-image -o-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%)
+      background-image -moz-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%)
+      background-image -ms-linear-gradient(-89deg, #F4F4F4 0%, #D9D9D9 100%)
+      background-image linear-gradient(-179deg, #F4F4F4 0%, #D9D9D9 100%)
+
+
+.b-form__error
+  margin 4px 0 0
+  display block
+  color #D53532
+
+.b-form__error,
+.b-form__error-message
+  font-style normal
+
+.b-form__hero
+  position absolute
+  top 14px
+  left 9px
+  width 14px
+  height 13px
+  background url('/blocks/img/hero.png')
+
+.b-form__coordinate
+  position absolute
+  width 22px
+  height 22px
+  top 9px
+  right 10px
+  background url('/blocks/img/coordinate.png')
+  cursor pointer
+
+  &:hover
+    opacity .5
+
+.b-form__checkbox-label,
+.b-form__fake-checkbox,
+.b-form__checkbox-text
+  display inline-block
+  vertical-align middle
+
+.b-form__checkbox
+  display none
+
+.ie8
+  .b-form__checkbox
+    display inline-block
+  .b-form__fake-checkbox
+    display none
+
+.b-form__checkbox-label
+  margin 0 0 0 12px
+  &:first-child
+    margin 0
+
+.b-form__fake-checkbox
+  position relative
+  width 12px
+  height 12px
+  border-radius 50%
+  border 1px solid #9c9c9c
+  background #fefefe
+  background -moz-linear-gradient(top,  #fefefe 0%, #ececec 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#ececec))
+  background -webkit-linear-gradient(top,  #fefefe 0%,#ececec 100%)
+  background -o-linear-gradient(top,  #fefefe 0%,#ececec 100%)
+  background -ms-linear-gradient(top,  #fefefe 0%,#ececec 100%)
+  background linear-gradient(to bottom,  #fefefe 0%,#ececec 100%)
+
+.b-form__checkbox:checked + .b-form__fake-checkbox
+  &:before
+    position absolute
+    width 6px
+    height 6px
+    top 3px
+    left 3px
+    content ''
+    background #000100
+    border-radius 50%
+
+.b-form__checkbox-text
+  font-style normal
+
+.b-form__small-select
+  position absolute
+  top 5px
+  left 5px
+  width 65px
+  border-radius 2px
+  height 32px
+  color #4c4c4c
+  background #e6e6e6
+  border none
+  outline none
+  font-weight 600

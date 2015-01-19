@@ -1,0 +1,103 @@
+.b-popup
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  display none
+  z-index 10
+
+.b-popup__wrap
+  position relative
+  z-index 2
+  height 100%
+  overflow auto
+
+.b-popup__inner
+  max-width 1100px
+  min-width 1000px
+  margin auto
+  padding 0 0 30px
+
+.b-popup__overlay
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z-index 1
+  background #464646
+  background rgba(71,71,71,.95)
+  box-shadow 0 20 372px rgba(70,70,70,.98) inset
+
+.b-popup__head
+  margin 13px 0 0
+
+.b-popup__head-left
+  margin 4px 0 0
+  float left
+
+.b-popup__head-right
+  float right
+
+.b-popup__head-logo,
+.b-popup__head-text
+  display inline-block
+  vertical-align middle
+
+.b-popup__head-logo
+  position relative
+  top 2px
+  text-decoration none
+
+  &:hover
+    .b-popup__head-logo-image
+      &._type_normal
+        display none
+      &._type_hover
+        display inline-block
+
+.b-popup__head-logo-image
+  &._type_hover
+    display none
+
+.b-popup__head-text
+  margin 0 0 0 10px
+  padding 0 0 0 11px
+  height 29px
+  font-style normal
+  font-size 17px
+  line-height 29px
+  border-left 1px solid #fff
+  color #fff
+
+.b-popup__head-link,
+.b-popup__head-btn
+  display inline-block
+  vertical-align middle
+  font-size 15px
+  color #ababab
+  text-decoration none
+  transition .3s all
+  &:visited
+    color #ababab
+  &:hover
+    color #fff
+
+.b-popup__head-btn
+  position relative
+  margin 0 0 0 22px
+  border 1px solid #ababab
+  padding: 0 45px
+  height: 40px
+  line-height: 38px
+  text-align center
+  border-radius 3px
+  &:hover
+    border-color #fff
+    background #fff
+    color #004492
+    box-shadow: 0 0 6px rgba(255,255,255,.6)
+  &:active
+    top 1px
+    box-shadow none
